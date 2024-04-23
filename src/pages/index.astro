@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Image from 'astro/components/Image.astro';
+import rainbowImage from "../../src/assets/images/doubleRainbow.jpeg";
 ---
 
 <!doctype html>
@@ -13,9 +15,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
+			{<Image src={rainbowImage} alt={""} />}
+			
 			<h1>Atlantic Crossing - 2024</h1>
 			<p>
-				Welcome to the official website of Sailing Amazona. This is where you can track the latest activities and adventures of Amazona, real or near-real time.  
+				Welcome to Sailing Amazona. This is where you can track the latest activities and adventures of Amazona. 
 			</p>
 			<p>
 				--- GPS Tracking Placeholder ---
